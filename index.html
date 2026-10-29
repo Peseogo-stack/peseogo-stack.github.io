@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro Vieira · Engenharia de Software</title>
+  <meta name="description" content="Portfólio de Pedro Vieira, estudante de Engenharia de Software em Boa Vista (RR) e eletricista de rede de distribuição. Projetos web em JavaScript, Python e SQL.">
+  <meta name="author" content="Pedro Gabriel Costa Vieira">
+  <link rel="canonical" href="https://peseogo-stack.github.io/">
+
+  <!-- Prévia ao compartilhar o link (LinkedIn, WhatsApp...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://peseogo-stack.github.io/">
+  <meta property="og:title" content="Pedro Vieira · Engenharia de Software">
+  <meta property="og:description" content="Estudante de Engenharia de Software e eletricista. Construo ferramentas web para problemas reais de quem trabalha em campo.">
+  <meta property="og:image" content="https://peseogo-stack.github.io/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#040a22">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pedro Gabriel Costa Vieira",
+    "alternateName": "Pedro Vieira",
+    "url": "https://peseogo-stack.github.io/",
+    "jobTitle": "Estudante de Engenharia de Software",
+    "address": { "@type": "PostalAddress", "addressLocality": "Boa Vista", "addressRegion": "RR", "addressCountry": "BR" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "UNINTER" },
+    "sameAs": [
+      "https://github.com/Peseogo-stack",
+      "https://www.linkedin.com/in/pedro-gabriel-costa-vieira03052007"
+    ]
+  }
+  </script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="brilho" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.6 16 2.5a13.4 13.4 0 0 0-7 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-externo" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-cadeado" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></symbol>
+</svg>
+
+  <header class="nav faixa">
+    <div class="largura">
+      <a class="marca" href="#inicio" aria-label="Pedro Vieira, início">
+        <span class="marca__sigla" aria-hidden="true">PV</span>
+        <span>Pedro Vieira</span>
+      </a>
+      <nav class="nav__links" id="menu" aria-label="Seções">
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#habilidades">Habilidades</a>
+      </nav>
+      <a class="btn btn--vidro btn--pequeno nav__contato" href="#contato">Contato</a>
+      <button class="menu-botao" id="abrir-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <svg class="icone" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+  <!-- ============ TOPO ============ -->
+  <section class="hero heroi" id="inicio">
+    <div class="fundo" aria-hidden="true">
+      <div class="luz luz--1"></div>
+      <div class="luz luz--2"></div>
+      <div class="luz luz--3"></div>
+      <div class="grade"></div>
+      <div class="grade grade--viva"></div>
+
+      <!-- circuito para telas largas -->
+      <svg class="circuito circuito--h" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+        <g class="trilhas">
+          <path pathLength="1000" style="--d:0s" d="M-10 150 H210 L270 210 H470 L520 160 H700"/>
+          <path pathLength="1000" style="--d:.15s" d="M-10 770 H160 L220 710 H400 L450 760 H620 L660 800 H760"/>
+          <path pathLength="1000" style="--d:.1s" d="M1450 110 H1210 L1150 170 H1010 L970 130 H880"/>
+          <path pathLength="1000" style="--d:.25s" d="M1450 800 H1260 L1200 740 H1040 L1000 780 H900"/>
+          <path pathLength="1000" style="--d:.3s" d="M1450 470 H1330 L1290 430 H1180"/>
+          <path pathLength="1000" style="--d:.2s" d="M380 910 V840 L430 790 H560"/>
+          <path pathLength="1000" style="--d:.35s" d="M1060 -10 V60 L1100 100 H1240"/>
+          <path pathLength="1000" style="--d:.05s" d="M-10 460 H70 L110 420 H180"/>
+        </g>
+        <g class="pulsos" filter="url(#brilho)">
+          <path pathLength="1000" style="--dur:5s;--atraso:1.4s" d="M-10 150 H210 L270 210 H470 L520 160 H700"/>
+          <path pathLength="1000" style="--dur:6s;--atraso:2.6s" d="M-10 770 H160 L220 710 H400 L450 760 H620 L660 800 H760"/>
+          <path pathLength="1000" style="--dur:4.4s;--atraso:2s" d="M1450 110 H1210 L1150 170 H1010 L970 130 H880"/>
+          <path pathLength="1000" style="--dur:5.6s;--atraso:3.4s" d="M1450 800 H1260 L1200 740 H1040 L1000 780 H900"/>
+          <path pathLength="1000" style="--dur:3.6s;--atraso:1.7s" d="M1450 470 H1330 L1290 430 H1180"/>
+          <path pathLength="1000" style="--dur:4s;--atraso:3s" d="M380 910 V840 L430 790 H560"/>
+          <path pathLength="1000" style="--dur:4.2s;--atraso:3.8s" d="M1060 -10 V60 L1100 100 H1240"/>
+          <path pathLength="1000" style="--dur:3.8s;--atraso:2.3s" d="M-10 460 H70 L110 420 H180"/>
+        </g>
+        <g class="surto" filter="url(#brilho)">
+          <path pathLength="1000" style="--s:0s" d="M-10 150 H210 L270 210 H470 L520 160 H700"/>
+          <path pathLength="1000" style="--s:.1s" d="M-10 770 H160 L220 710 H400 L450 760 H620 L660 800 H760"/>
+          <path pathLength="1000" style="--s:.05s" d="M1450 110 H1210 L1150 170 H1010 L970 130 H880"/>
+          <path pathLength="1000" style="--s:.15s" d="M1450 800 H1260 L1200 740 H1040 L1000 780 H900"/>
+          <path pathLength="1000" style="--s:.2s" d="M1450 470 H1330 L1290 430 H1180"/>
+          <path pathLength="1000" style="--s:.1s" d="M380 910 V840 L430 790 H560"/>
+          <path pathLength="1000" style="--s:.25s" d="M1060 -10 V60 L1100 100 H1240"/>
+          <path pathLength="1000" style="--s:.05s" d="M-10 460 H70 L110 420 H180"/>
+        </g>
+        <g class="nos">
+          <g style="--dur:5s;--atraso:1.4s;--s:0s"><circle class="halo" cx="700" cy="160" r="5"/><circle class="faisca" cx="700" cy="160" r="5"/><circle class="no" cx="700" cy="160" r="5"/></g>
+          <g style="--dur:6s;--atraso:2.6s;--s:.1s"><circle class="halo" cx="760" cy="800" r="5"/><circle class="faisca" cx="760" cy="800" r="5"/><circle class="no" cx="760" cy="800" r="5"/></g>
+          <g style="--dur:4.4s;--atraso:2s;--s:.05s"><circle class="halo" cx="880" cy="130" r="5"/><circle class="faisca" cx="880" cy="130" r="5"/><circle class="no" cx="880" cy="130" r="5"/></g>
+          <g style="--dur:5.6s;--atraso:3.4s;--s:.15s"><circle class="halo" cx="900" cy="780" r="5"/><circle class="faisca" cx="900" cy="780" r="5"/><circle class="no" cx="900" cy="780" r="5"/></g>
+          <g style="--dur:3.6s;--atraso:1.7s;--s:.2s"><circle class="halo" cx="1180" cy="430" r="5"/><circle class="faisca" cx="1180" cy="430" r="5"/><circle class="no" cx="1180" cy="430" r="5"/></g>
+          <g style="--dur:4s;--atraso:3s;--s:.1s"><circle class="halo" cx="560" cy="790" r="5"/><circle class="faisca" cx="560" cy="790" r="5"/><circle class="no" cx="560" cy="790" r="5"/></g>
+          <g style="--dur:4.2s;--atraso:3.8s;--s:.25s"><circle class="halo" cx="1240" cy="100" r="5"/><circle class="faisca" cx="1240" cy="100" r="5"/><circle class="no" cx="1240" cy="100" r="5"/></g>
+          <g style="--dur:3.8s;--atraso:2.3s;--s:.05s"><circle class="halo" cx="180" cy="420" r="5"/><circle class="faisca" cx="180" cy="420" r="5"/><circle class="no" cx="180" cy="420" r="5"/></g>
+        </g>
+      </svg>
+
+      <!-- circuito para celular (em pé) -->
+      <svg class="circuito circuito--v" viewBox="0 0 400 900" preserveAspectRatio="xMidYMid slice">
+        <g class="trilhas">
+          <path pathLength="1000" style="--d:0s" d="M-10 96 H90 L130 136 H236"/>
+          <path pathLength="1000" style="--d:.1s" d="M410 64 H330 L290 104 V176"/>
+          <path pathLength="1000" style="--d:.2s" d="M410 540 H340 L300 580 H246"/>
+          <path pathLength="1000" style="--d:.15s" d="M-10 660 H50 L90 700 H170"/>
+          <path pathLength="1000" style="--d:.3s" d="M110 910 V846 L150 806 H262"/>
+          <path pathLength="1000" style="--d:.25s" d="M410 300 H372 L346 274 H310"/>
+        </g>
+        <g class="pulsos" filter="url(#brilho)">
+          <path pathLength="1000" style="--dur:4.4s;--atraso:1.4s" d="M-10 96 H90 L130 136 H236"/>
+          <path pathLength="1000" style="--dur:5s;--atraso:2.2s" d="M410 64 H330 L290 104 V176"/>
+          <path pathLength="1000" style="--dur:4s;--atraso:1.8s" d="M410 540 H340 L300 580 H246"/>
+          <path pathLength="1000" style="--dur:4.8s;--atraso:2.8s" d="M-10 660 H50 L90 700 H170"/>
+          <path pathLength="1000" style="--dur:4.2s;--atraso:3.2s" d="M110 910 V846 L150 806 H262"/>
+          <path pathLength="1000" style="--dur:3.6s;--atraso:2.5s" d="M410 300 H372 L346 274 H310"/>
+        </g>
+        <g class="surto" filter="url(#brilho)">
+          <path pathLength="1000" style="--s:0s" d="M-10 96 H90 L130 136 H236"/>
+          <path pathLength="1000" style="--s:.1s" d="M410 64 H330 L290 104 V176"/>
+          <path pathLength="1000" style="--s:.2s" d="M410 540 H340 L300 580 H246"/>
+          <path pathLength="1000" style="--s:.05s" d="M-10 660 H50 L90 700 H170"/>
+          <path pathLength="1000" style="--s:.15s" d="M110 910 V846 L150 806 H262"/>
+          <path pathLength="1000" style="--s:.25s" d="M410 300 H372 L346 274 H310"/>
+        </g>
+        <g class="nos">
+          <g style="--dur:4.4s;--atraso:1.4s;--s:0s"><circle class="halo" cx="236" cy="136" r="5"/><circle class="faisca" cx="236" cy="136" r="5"/><circle class="no" cx="236" cy="136" r="5"/></g>
+          <g style="--dur:5s;--atraso:2.2s;--s:.1s"><circle class="halo" cx="290" cy="176" r="5"/><circle class="faisca" cx="290" cy="176" r="5"/><circle class="no" cx="290" cy="176" r="5"/></g>
+          <g style="--dur:4s;--atraso:1.8s;--s:.2s"><circle class="halo" cx="246" cy="580" r="5"/><circle class="faisca" cx="246" cy="580" r="5"/><circle class="no" cx="246" cy="580" r="5"/></g>
+          <g style="--dur:4.8s;--atraso:2.8s;--s:.05s"><circle class="halo" cx="170" cy="700" r="5"/><circle class="faisca" cx="170" cy="700" r="5"/><circle class="no" cx="170" cy="700" r="5"/></g>
+          <g style="--dur:4.2s;--atraso:3.2s;--s:.15s"><circle class="halo" cx="262" cy="806" r="5"/><circle class="faisca" cx="262" cy="806" r="5"/><circle class="no" cx="262" cy="806" r="5"/></g>
+          <g style="--dur:3.6s;--atraso:2.5s;--s:.25s"><circle class="halo" cx="310" cy="274" r="5"/><circle class="faisca" cx="310" cy="274" r="5"/><circle class="no" cx="310" cy="274" r="5"/></g>
+        </g>
+      </svg>
+
+      <div class="grao"></div>
+      <div class="holofote"></div>
+      <div class="heroi__vinheta"></div>
+    </div>
+
+    <div class="faixa">
+      <div class="largura heroi__grade">
+        <div class="heroi__texto">
+          <p class="pilula entra" style="--d:.05s"><span class="ponto" aria-hidden="true"></span>Aberto a estágio, suporte de TI e dev júnior</p>
+          <h1 class="heroi__nome">Pedro Vieira</h1>
+          <p class="digitando entra" style="--d:.28s" aria-label="Eu sou desenvolvedor em formação, eletricista de rede e estudante de Engenharia de Software">
+            <span aria-hidden="true">Eu sou </span><span class="digitando__texto" aria-hidden="true">desenvolvedor em formação</span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="lead entra" style="--d:.38s">Trabalho na rede de distribuição de energia e estudo Engenharia de Software em Boa Vista (RR). Construo ferramentas web para quem trabalha em campo.</p>
+          <div class="botoes entra" style="--d:.48s">
+            <a class="btn btn--corrente magnetico" href="#projetos">Ver projetos <svg class="icone" aria-hidden="true"><use href="#i-seta"/></svg></a>
+            <a class="btn btn--vidro magnetico" href="https://github.com/Peseogo-stack" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+            <a class="btn btn--vidro magnetico" href="https://www.linkedin.com/in/pedro-gabriel-costa-vieira03052007" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+          </div>
+          <dl class="medidor entra" style="--d:.6s">
+            <div><dt>Projetos</dt><dd>04</dd></div>
+            <div><dt>Demos no ar</dt><dd>02</dd></div>
+            <div><dt>Período</dt><dd>2º</dd></div>
+          </dl>
+        </div>
+
+        <div class="heroi__cartao-zona entra" style="--d:.5s">
+          <div class="heroi__flutua">
+            <div class="heroi__cartao" id="cartao">
+              <div class="heroi__barra">
+                <span class="heroi__bolinhas" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="heroi__arquivo">pedro.js</span>
+                <button type="button" class="heroi__executar" id="executar"><svg class="icone" aria-hidden="true"><use href="#i-play"/></svg><span id="executar-texto">Executar</span></button>
+              </div>
+              <div class="heroi__codigo" role="img" aria-label="Código descrevendo o Pedro: cidade Boa Vista, curso Engenharia de Software, trabalho eletricista de rede, estudando Python, SQL e Web, disponível.">
+                <span class="l"><span class="c-pal">const</span> <span class="c-cha">pedro</span> <span class="c-pon">=</span> <span class="c-pon">{</span></span>
+                <span class="l">  <span class="c-cha">cidade</span><span class="c-pon">:</span> <span class="c-txt">"Boa Vista, RR"</span><span class="c-pon">,</span></span>
+                <span class="l">  <span class="c-cha">curso</span><span class="c-pon">:</span> <span class="c-txt">"Eng. de Software"</span><span class="c-pon">,</span></span>
+                <span class="l">  <span class="c-cha">trabalho</span><span class="c-pon">:</span> <span class="c-txt">"Eletricista de rede"</span><span class="c-pon">,</span></span>
+                <span class="l">  <span class="c-cha">estudando</span><span class="c-pon">:</span> <span class="c-pon">[</span><span class="c-txt">"Python"</span><span class="c-pon">,</span> <span class="c-txt">"SQL"</span><span class="c-pon">,</span> <span class="c-txt">"Web"</span><span class="c-pon">],</span></span>
+                <span class="l l--ativa">  <span class="c-cha">disponivel</span><span class="c-pon">:</span> <span class="c-bool">true</span><span class="c-pon">,</span></span>
+                <span class="l"><span class="c-pon">};</span></span>
+                <span class="l"> </span>
+                <span class="l"><span class="c-fn">apresentar</span><span class="c-pon">(</span><span class="c-cha">pedro</span><span class="c-pon">);</span></span>
+              </div>
+              <div class="heroi__console">
+                <p class="heroi__cmd"><span class="c-prompt">$</span> node pedro.js</p>
+                <div class="saida" id="saida" aria-live="polite">
+                  <p class="ok" style="--i:0">✓ perfil carregado</p>
+                  <p style="--i:1"><span class="k">curso</span><span>Eng. de Software · 2º período</span></p>
+                  <p style="--i:2"><span class="k">trabalho</span><span>Eletricista · NR-10 · NR-35</span></p>
+                  <p style="--i:3"><span class="k">projetos</span><span>4 (2 com demo no ar)</span></p>
+                  <p style="--i:4"><span class="k">status</span><span>disponível para estágio e dev júnior</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="rolar" href="#projetos"><span>Role para ver os projetos</span><i aria-hidden="true"></i></a>
+  </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <!-- Para adicionar um projeto, copie um <article class="vcard rola"> inteiro e troque os textos. -->
+    <section class="secao" id="projetos" aria-labelledby="projetos-titulo">
+      <div class="faixa">
+        <div class="largura">
+          <header class="secao__topo">
+            <p class="eyebrow-mono">// projetos</p>
+            <h2 class="titulo-secao" id="projetos-titulo">O que eu construí</h2>
+            <p class="lead">Cada projeto começou com um problema que vi de perto: no almoxarifado, na faculdade ou na rotina de estudos.</p>
+          </header>
+          <div class="vitrine" id="vitrine">
+          <article class="vcard rola">
+            <div class="vcard__midia">
+              <div class="janela">
+                <div class="janela__barra" aria-hidden="true"><i></i><i></i><i></i><span>peseogo-stack.github.io/inventaria-system</span></div>
+                <div class="janela__tela"><img src="img/inventaria-system.webp" alt="Tela do Inventaria System" loading="lazy" width="960" height="600"></div>
+              </div>
+            </div>
+            <div class="vcard__corpo">
+              <div class="vcard__meta"><span class="tipo"><span class="mini-disj" aria-hidden="true"><i></i></span>C1 · Gestão de estoque</span><span class="led led--demo">Demo no ar</span></div>
+              <h3>Inventaria System</h3>
+              <p class="resumo">Inventário de almoxarifado sem papel: importa a planilha do Excel, faz a contagem pelo celular com leitor de código de barras e gera a recontagem só dos itens que divergiram.</p>
+              <ul class="destaques">
+                  <li>Estado calculado a partir de uma sequência de eventos, com histórico de quem lançou o quê</li>
+                  <li>Código de barras Code 128 gerado do zero em SVG</li>
+                  <li>Aponta possíveis trocas de código comparando as descrições dos itens</li>
+              </ul>
+              <ul class="tags" aria-label="Tecnologias"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SheetJS</li><li>ZXing</li></ul>
+                <div class="links">
+                  <a class="link-proj link-proj--forte" href="https://peseogo-stack.github.io/inventaria-system/" target="_blank" rel="noopener">Abrir demo <svg class="icone" aria-hidden="true"><use href="#i-externo"/></svg></a>
+                  <a class="link-proj" href="https://github.com/Peseogo-stack/inventaria-system" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-github"/></svg>Código</a>
+                </div>
+            </div>
+          </article>
+          <article class="vcard rola">
+            <div class="vcard__midia">
+              <div class="janela">
+                <div class="janela__barra" aria-hidden="true"><i></i><i></i><i></i><span>peseogo-stack.github.io/mathesis</span></div>
+                <div class="janela__tela"><img src="img/mathesis.webp" alt="Tela do Mathesis" loading="lazy" width="960" height="600"></div>
+              </div>
+            </div>
+            <div class="vcard__corpo">
+              <div class="vcard__meta"><span class="tipo"><span class="mini-disj" aria-hidden="true"><i></i></span>C2 · Educação</span><span class="led led--demo">Demo no ar</span></div>
+              <h3>Mathesis</h3>
+              <p class="resumo">Trilha gamificada de matemática básica, criada para estudar a matéria em que eu mais travava na faculdade. Explica cada conteúdo com analogias de programação.</p>
+              <ul class="destaques">
+                  <li>Módulos com pré-requisitos e verificação de domínio</li>
+                  <li>Revisão espaçada no sistema Leitner (1, 3, 7, 16 e 35 dias)</li>
+                  <li>Fórmulas em LaTeX, navegável por teclado e responsivo</li>
+              </ul>
+              <ul class="tags" aria-label="Tecnologias"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MathJax</li></ul>
+                <div class="links">
+                  <a class="link-proj link-proj--forte" href="https://peseogo-stack.github.io/mathesis/" target="_blank" rel="noopener">Abrir demo <svg class="icone" aria-hidden="true"><use href="#i-externo"/></svg></a>
+                  <a class="link-proj" href="https://github.com/Peseogo-stack/mathesis" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-github"/></svg>Código</a>
+                </div>
+            </div>
+          </article>
+          <article class="vcard rola">
+            <div class="vcard__midia">
+              <div class="janela">
+                <div class="janela__barra" aria-hidden="true"><i></i><i></i><i></i><span>prf-aprova · aplicativo offline</span></div>
+                <div class="janela__tela"><img src="img/prf-aprova.webp" alt="Tela do PRF Aprova" loading="lazy" width="960" height="600"></div>
+              </div>
+            </div>
+            <div class="vcard__corpo">
+              <div class="vcard__meta"><span class="tipo"><span class="mini-disj" aria-hidden="true"><i></i></span>C3 · Estudo para concurso</span><span class="led">Código privado</span></div>
+              <h3>PRF Aprova</h3>
+              <p class="resumo">Plataforma de estudos para o concurso da Polícia Rodoviária Federal que funciona sem internet: questões no estilo Cebraspe, simulados, flashcards e cronograma semanal.</p>
+              <ul class="destaques">
+                  <li>Funciona offline como aplicativo instalável (PWA)</li>
+                  <li>Flashcards com repetição espaçada pelo algoritmo SM-2</li>
+                  <li>Script em Node.js empacota tudo em um único arquivo HTML</li>
+              </ul>
+              <ul class="tags" aria-label="Tecnologias"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PWA</li><li>Node.js</li></ul>
+                <p class="privado"><svg class="icone" aria-hidden="true"><use href="#i-cadeado"/></svg>Código privado</p>
+            </div>
+          </article>
+          <article class="vcard rola">
+            <div class="vcard__midia">
+              <div class="janela">
+                <div class="janela__barra" aria-hidden="true"><i></i><i></i><i></i><span>uso interno · rede da empresa</span></div>
+                <div class="janela__tela"><svg class="diagrama" viewBox="0 0 600 375" role="img" aria-label="Arquitetura: celular e computador enviam dados para uma API em Flask, que grava no SQLite">
+                    <g class="dg-fluxo"><path d="M190 110 C222 110 222 172 252 172"/><path d="M190 265 C222 265 222 205 252 205"/><path d="M372 188 H426"/></g>
+                    <g class="dg-caixa"><rect x="40" y="75" width="150" height="70" rx="12"/><rect x="40" y="230" width="150" height="70" rx="12"/><rect x="252" y="146" width="120" height="84" rx="12" class="dg-destaque"/><rect x="426" y="146" width="134" height="84" rx="12"/></g>
+                    <g class="dg-texto">
+                      <text x="115" y="106">Celular</text><text x="115" y="127" class="dg-mono">contagem · EPI</text>
+                      <text x="115" y="261">Computador</text><text x="115" y="282" class="dg-mono">gestão · relatórios</text>
+                      <text x="312" y="183">Flask</text><text x="312" y="204" class="dg-mono">API · login PIN</text>
+                      <text x="493" y="183">SQLite</text><text x="493" y="204" class="dg-mono">eventos + VIEWs</text>
+                      <text x="300" y="338" class="dg-mono">sem rede → fila no aparelho → sincroniza depois</text>
+                    </g>
+                  </svg></div>
+              </div>
+            </div>
+            <div class="vcard__corpo">
+              <div class="vcard__meta"><span class="tipo"><span class="mini-disj" aria-hidden="true"><i></i></span>C4 · Python + SQL</span><span class="led">Uso interno</span></div>
+              <h3>Sistema de almoxarifado</h3>
+              <p class="resumo">Sistema web para o almoxarifado de uma empresa do setor elétrico: requisições das equipes de campo, entrega de EPI com validade de CA, cautelas e painel de indicadores.</p>
+              <ul class="destaques">
+                  <li>Back-end em Flask com SQLite e VIEWs para calcular saldos</li>
+                  <li>Sete perfis de acesso, PIN guardado como hash e bloqueio após tentativas erradas</li>
+                  <li>O celular continua lançando sem rede e sincroniza quando a conexão volta</li>
+              </ul>
+              <ul class="tags" aria-label="Tecnologias"><li>Python</li><li>Flask</li><li>SQLite</li><li>SQL</li><li>JavaScript</li></ul>
+                <p class="privado"><svg class="icone" aria-hidden="true"><use href="#i-cadeado"/></svg>Sistema interno da empresa, código privado</p>
+            </div>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE E TRAJETÓRIA ============ -->
+    <section class="secao" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="faixa">
+        <div class="largura">
+          <div class="sobre">
+            <div class="sobre__texto">
+              <p class="eyebrow-mono">// sobre</p>
+              <h2 class="titulo-secao" id="sobre-titulo">Do poste ao código</h2>
+              <p>Moro em Boa Vista (RR) e curso <strong>Engenharia de Software na UNINTER</strong>. Durante o dia, trabalho como <strong>eletricista na rede de distribuição de energia</strong>.</p>
+              <p>É um trabalho de procedimento: NR-10, NR-35, conferir tudo antes de qualquer manobra e resolver o problema com o cliente esperando. Levo o mesmo método para o código: entender o problema no campo, seguir um passo a passo e testar antes de entregar.</p>
+              <p>No longo prazo, quero unir as duas áreas e construir <strong>software para energia e automação industrial</strong>.</p>
+            </div>
+            <aside class="agora" aria-labelledby="agora-titulo">
+              <div class="agora__topo">
+                <h3 class="agora__titulo" id="agora-titulo"><span class="ponto" aria-hidden="true"></span>Agora</h3>
+                <span class="led led--demo">online</span>
+              </div>
+              <!-- Atualize esta lista (e a data) de tempos em tempos -->
+              <ul class="agora__lista">
+                <li><span class="agora__rotulo">Faculdade</span><span class="agora__valor">2º período de Eng. de Software</span></li>
+                <li><span class="agora__rotulo">Estudando</span><span class="agora__valor">Python e SQL no DataCamp</span></li>
+                <li><span class="agora__rotulo">Inglês</span><span class="agora__valor">Todos os dias no Duolingo</span></li>
+                <li><span class="agora__rotulo">Construindo</span><span class="agora__valor">Projetos com o GitHub Student Pack</span></li>
+              </ul>
+              <p class="agora__data">atualizado em out. 2026</p>
+            </aside>
+          </div>
+
+          <div class="trajetoria" id="trajetoria">
+            <div class="trajetoria__topo">
+              <p class="eyebrow-mono">// trajetória</p>
+              <h3 class="titulo-sub">Experiência e formação</h3>
+            </div>
+
+            <!-- Dois fios: elétrica (esquerda) e software (direita) se juntam no objetivo -->
+            <div class="fios">
+              <div class="fios__cabecas" aria-hidden="true"><span class="fios__rotulo fios__rotulo--ele">Elétrica</span><span></span><span class="fios__rotulo fios__rotulo--sw">Software</span></div>
+              <ol class="fios__grade">
+              <li class="fio-item fio-item--software" style="grid-row:1">
+                <span class="area area--software">Software</span>
+                <span class="tl-data">mar. 2026</span>
+                <h4 class="tl-titulo">Início de Engenharia de Software</h4>
+                <p class="tl-local">UNINTER · EAD</p>
+                <p class="tl-desc">Bacharelado a distância, com previsão de formatura em 2029.</p>
+              </li>
+              <li class="fio-item fio-item--eletrica" style="grid-row:2">
+                <span class="area area--eletrica">Elétrica</span>
+                <span class="tl-data">2026</span>
+                <h4 class="tl-titulo">Curso de eletricista</h4>
+                <p class="tl-local">NR-10 · NR-35 · SEP</p>
+                <p class="tl-desc">Segurança em eletricidade, trabalho em altura e sistema elétrico de potência, com foco em redes de distribuição.</p>
+              </li>
+              <li class="fio-item fio-item--eletrica" style="grid-row:3">
+                <span class="area area--eletrica">Elétrica</span>
+                <span class="tl-data">jul. 2026</span>
+                <h4 class="tl-titulo">Eletricista na Norte Tech</h4>
+                <p class="tl-local">Boa Vista, RR</p>
+                <p class="tl-desc">Trabalho na rede de distribuição de energia, com procedimento e segurança em primeiro lugar.</p>
+              </li>
+              <li class="fio-item fio-item--software" style="grid-row:4">
+                <span class="area area--software">Software</span>
+                <span class="tl-data">2026</span>
+                <h4 class="tl-titulo">Certificados no DataCamp</h4>
+                <p class="tl-local">Python para desenvolvedores · Git</p>
+                <p class="tl-desc">Estudo de Python, SQL e Git com o GitHub Student Developer Pack.</p>
+              </li>
+              <li class="fio-item fio-item--software" style="grid-row:5">
+                <span class="area area--software">Software</span>
+                <span class="tl-data">out. 2026<b class="selo-agora">agora</b></span>
+                <h4 class="tl-titulo">4 projetos construídos</h4>
+                <p class="tl-local">JavaScript · Python · SQL</p>
+                <p class="tl-desc">Inventaria System, Mathesis, PRF Aprova e o sistema de almoxarifado. Duas demos estão no ar.</p>
+              </li>
+              </ol>
+              <svg class="fios__uniao" viewBox="-2 0 88 120" width="88" height="120" aria-hidden="true" filter="url(#brilho)">
+                <path class="u-ele" d="M0 0 C0 58 42 46 42 98"/>
+                <path class="u-sw" d="M84 0 C84 58 42 46 42 98"/>
+                <path class="u-um" d="M42 98 V120"/>
+                <path class="u-pulso" pathLength="1000" d="M0 0 C0 58 42 46 42 98 V120"/>
+                <path class="u-pulso" pathLength="1000" style="animation-delay:1.5s" d="M84 0 C84 58 42 46 42 98 V120"/>
+              </svg>
+              <div class="fios__destino">
+                <span class="area area--futuro">2029 · objetivo</span>
+                <h4 class="tl-titulo">Formatura e próximo passo</h4>
+                <p class="tl-local">previsão</p>
+                <p class="tl-desc">Software para energia e automação industrial, unindo o código à experiência de campo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section class="secao" id="habilidades" aria-labelledby="hab-titulo">
+      <div class="faixa">
+        <div class="largura">
+          <header class="secao__topo">
+            <p class="eyebrow-mono">// habilidades</p>
+            <h2 class="titulo-secao" id="hab-titulo">Com o que eu trabalho</h2>
+            <p class="lead">Separado com sinceridade: o que já uso nos projetos, o que estou estudando e o que trouxe do campo.</p>
+          </header>
+          <div class="hab-legenda" aria-hidden="true"><span class="cor-uso">Em uso</span><span class="cor-estudo">Estudando</span><span class="cor-campo">Da área elétrica</span></div>
+
+          <!-- Cada habilidade lista em data-proj os projetos onde foi usada (inv, mat, prf, alm).
+               Os fios entre as colunas são desenhados pelo js/main.js a partir disso. -->
+          <div class="rede" id="rede">
+            <svg class="rede__fios" id="rede-fios" aria-hidden="true"></svg>
+            <div class="rede__col rede__col--hab">
+              <p class="rede__rotulo">Em uso</p>
+              <ul>
+                <li><button type="button" class="no" data-proj="inv mat prf alm" aria-pressed="false" aria-label="HTML: usado em Inventaria System, Mathesis, PRF Aprova e Almoxarifado">HTML</button></li>
+                <li><button type="button" class="no" data-proj="inv mat prf alm" aria-pressed="false" aria-label="CSS: usado em Inventaria System, Mathesis, PRF Aprova e Almoxarifado">CSS</button></li>
+                <li><button type="button" class="no" data-proj="inv mat prf alm" aria-pressed="false" aria-label="JavaScript: usado em Inventaria System, Mathesis, PRF Aprova e Almoxarifado">JavaScript</button></li>
+                <li><button type="button" class="no" data-proj="inv mat prf alm" aria-pressed="false" aria-label="Git e GitHub: usado em Inventaria System, Mathesis, PRF Aprova e Almoxarifado">Git e GitHub</button></li>
+                <li><button type="button" class="no" data-proj="alm" aria-pressed="false" aria-label="Python: usado em Almoxarifado">Python</button></li>
+                <li><button type="button" class="no" data-proj="alm" aria-pressed="false" aria-label="Flask: usado em Almoxarifado">Flask</button></li>
+                <li><button type="button" class="no" data-proj="alm" aria-pressed="false" aria-label="SQLite: usado em Almoxarifado">SQLite</button></li>
+                <li><button type="button" class="no" data-proj="prf alm" aria-pressed="false" aria-label="PWA / offline: usado em PRF Aprova e Almoxarifado">PWA / offline</button></li>
+                <li><button type="button" class="no" data-proj="prf" aria-pressed="false" aria-label="Node.js: usado em PRF Aprova">Node.js</button></li>
+                <li><button type="button" class="no" data-proj="inv alm" aria-pressed="false" aria-label="Excel (SheetJS): usado em Inventaria System e Almoxarifado">Excel (SheetJS)</button></li>
+              </ul>
+            </div>
+            <div class="rede__col rede__col--proj">
+              <p class="rede__rotulo">Projetos</p>
+              <ul>
+                <li><button type="button" class="no no--proj" data-id="inv" aria-pressed="false">Inventaria System<small>Gestão de estoque</small></button></li>
+                <li><button type="button" class="no no--proj" data-id="mat" aria-pressed="false">Mathesis<small>Educação</small></button></li>
+                <li><button type="button" class="no no--proj" data-id="prf" aria-pressed="false">PRF Aprova<small>Concurso</small></button></li>
+                <li><button type="button" class="no no--proj" data-id="alm" aria-pressed="false">Almoxarifado<small>Python + SQL</small></button></li>
+              </ul>
+            </div>
+          </div>
+          <p class="rede__dica">Passe o mouse ou toque numa habilidade (ou num projeto) para ver as ligações.</p>
+
+          <div class="hab-extra">
+            <div class="hab-extra__grupo cor-estudo"><h3>Estudando agora</h3><ul class="chips"><li>SQL<small>DataCamp</small></li><li>Python para eng. de software<small>DataCamp</small></li><li>Inglês<small>Duolingo</small></li><li>Redes de computadores<small>estudando</small></li><li>Excel e Power BI<small>noções</small></li></ul></div>
+            <div class="hab-extra__grupo cor-campo"><h3>Da área elétrica</h3><ul class="chips"><li>NR-10<small>eletricidade</small></li><li>NR-35<small>trabalho em altura</small></li><li>SEP<small>sistema de potência</small></li><li>Redes de distribuição<small>campo</small></li><li>Direção defensiva<small>curso</small></li></ul></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="secao contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="contato__brilho" aria-hidden="true"></div>
+      <div class="faixa">
+        <div class="largura contato__caixa">
+          <p class="eyebrow-mono">// contato</p>
+          <h2 class="contato__titulo" id="contato-titulo">Vamos conversar?</h2>
+          <p class="lead">Estou buscando minha primeira oportunidade em tecnologia: estágio, suporte de TI ou desenvolvedor júnior. O jeito mais rápido de falar comigo é por e-mail.</p>
+          <div class="contato__email-card">
+            <a class="contato__email" id="email" href="mailto:pedrogabrielvieira050307@gmail.com">pedrogabrielvieira050307@gmail.com</a>
+            <button type="button" class="link-proj link-proj--forte" id="copiar-email">Copiar e-mail</button>
+          </div>
+          <div class="contato__redes">
+            <a class="btn btn--vidro" href="https://www.linkedin.com/in/pedro-gabriel-costa-vieira03052007" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+            <a class="btn btn--vidro" href="https://github.com/Peseogo-stack" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+          </div>
+          <p class="pilula"><span class="ponto" aria-hidden="true"></span>Aberto a estágio, suporte de TI e dev júnior</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape faixa">
+    <div class="largura">
+      <p>© <span id="ano">2026</span> Pedro Vieira · Boa Vista, RR</p>
+      <p>Feito à mão com HTML, CSS e JavaScript</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
