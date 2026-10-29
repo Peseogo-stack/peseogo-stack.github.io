@@ -190,7 +190,7 @@
     /* quando ninguém está mexendo, um pulso de energia passeia pelas ligações */
     if (!reduz) {
       setInterval(function () {
-        if (foco || fixo) return;
+        if (foco || fixo || document.getElementById('habilidades').classList.contains('pausado')) return;
         var caminhos = svg.querySelectorAll('path');
         if (!caminhos.length) return;
         var c = caminhos[Math.floor(Math.random() * caminhos.length)];
@@ -260,6 +260,14 @@
     }, { passive: true });
     atualizar();
   })();
+
+  /* ---------- Pausa as animações das seções que estão fora da tela ---------- */
+  if ('IntersectionObserver' in window) {
+    var obsSecoes = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (en) { en.target.classList.toggle('pausado', !en.isIntersecting); });
+    }, { rootMargin: '120px 0px' });
+    cada(document.querySelectorAll('#inicio, main > .secao'), function (s) { obsSecoes.observe(s); });
+  }
 
   /* ---------- Ano no rodapé ---------- */
   document.getElementById('ano').textContent = new Date().getFullYear();

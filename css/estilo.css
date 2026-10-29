@@ -624,6 +624,35 @@ h4 { margin: 0; }
   .pilula { font-size: .82rem; }
 }
 
+/* ---------- Celular e tablet: mesmo visual com menos trabalho de desenho ----------
+   Desfoque (filter: blur e backdrop-filter), mistura de camadas e manchas animadas
+   obrigam o celular a redesenhar a tela inteira a cada quadro; aqui viram versões paradas. */
+@media (max-width: 900px), (hover: none) and (pointer: coarse) {
+  .luz, .grao, .holofote, .grade--viva, .heroi .nos .halo { display: none; }
+  .heroi .fundo {
+    background:
+      radial-gradient(ellipse 95% 50% at 5% 0%, rgb(47 91 255 / .6), transparent 70%),
+      radial-gradient(ellipse 75% 40% at 100% 8%, rgb(42 31 209 / .5), transparent 70%),
+      radial-gradient(ellipse 70% 30% at 85% 62%, rgb(92 225 255 / .1), transparent 70%);
+  }
+  .pilula, .btn--vidro, .medidor, .heroi__cartao, .nav--fixa, .nav__links {
+    backdrop-filter: none; -webkit-backdrop-filter: none;
+  }
+  .pilula, .btn--vidro { background: rgb(12 26 79 / .88); }
+  .medidor { background: rgb(8 18 58 / .92); }
+  .heroi__cartao { background: linear-gradient(180deg, #0f1f5c, #071037); }
+  .nav--fixa { background: rgb(4 10 34 / .97); }
+  .nav__links { background: rgb(8 18 58 / .98); }
+  .pulsos, .surto, .fios__uniao, .rede__fios path.aceso, .rede.focando .rede__fios path.aceso { filter: none; }
+  .heroi__nome { filter: none; animation: subir .8s cubic-bezier(.2, .7, .2, 1) both .15s; }
+  .heroi__flutua { animation: none; }
+  .janela__tela img { animation: none; }
+  .contato__brilho { filter: none; }
+}
+
+/* animações pausam quando a seção sai da tela (classe colocada pelo js/main.js) */
+.pausado, .pausado *, .pausado *::before, .pausado *::after { animation-play-state: paused !important; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
