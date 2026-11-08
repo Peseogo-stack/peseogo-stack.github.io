@@ -28,7 +28,7 @@
   /* frase "Eu sou ..." que se digita sozinha */
   (function () {
     var el = heroi.querySelector('.digitando__texto');
-    var frases = ['técnico de telecomunicações', 'estudante de Eng. de Software', 'desenvolvedor em formação'];
+    var frases = ['da área de TI e Telecomunicações', 'estudante de Eng. de Software', 'eletricista de rede'];
     var i = 0, j = frases[0].length, apagando = true;
     if (reduz) return;
     function passo() {
